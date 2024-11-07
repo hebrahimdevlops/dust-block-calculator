@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Block Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Block Calculator</h1>
+      <label for="bags">Number of Bags of Cement:</label>
+      <input type="number" id="bags" min="1" required />
+      <br />
+
+      <label for="blockSize">Select Block Size:</label>
+      <select id="blockSize">
+        <option value="4x16x9">4" x 16" x 9"</option>
+        <option value="5x16x9">5" x 16" x 9"</option>
+        <option value="6x16x9">6" x 16" x 9"</option>
+      </select>
+
+      <button onclick="calculateBlocks()">Calculate</button>
+
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
